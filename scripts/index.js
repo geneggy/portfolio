@@ -2,7 +2,6 @@
 /* eslint-disable no-undef */
 
 $(document).ready(function() {
-  portfolio.handleAboutMe();
-  portfolio.handleProjects();
+  portfolio.bindEventListeners();
 });
 

@@ -36,7 +36,7 @@ const portfolio = (function() {
 <div class = "container grid-3 center">
 
   <div id= 'bookmark'>
-    <i class="far fa-bookmark fa-3x"></i>
+    <i class="fas fa-bookmark fa-3x"></i>
     <h3>Bookmark App</h3>
     <p>Simple web app for storing and maintaining various websites and details on an API. </p>
   </div>
@@ -53,7 +53,44 @@ const portfolio = (function() {
   </div>
 </div>
   `;
+  }
 
+  function generateSkillsHtml() {
+    return `
+    <div class="center">
+    <i class="fas fa-sitemap fa-10x"></i>
+    <h2>Skills</h2>
+    <ul>
+      <li>JavaScript</li>
+      <li>JQuery</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Placeholder</li>
+    </ul>
+  </div>
+
+    `;
+  }
+
+  function generateContactHtml() {
+    return `
+    <div class="grid-2 center">
+    
+    <div class="center">
+    <i class="fa fa-id-card fa-10x"></i>
+    </div>
+    <div class = contact_links>
+    <h2>Eugene Gian</h2>
+      <a href="mailto:eugene.gian@outlook.com" target="_top"><i class="fa fa-envelope fa-2x small_icon"></i></a>
+
+      <a href="https://github.com/geneggy"><i class="fab fa-github fa-2x small_icon"></i></a>
+
+      <a href="https://www.linkedin.com/in/eugene-gian-792b5715a/"><i class="fab fa-linkedin fa-2x small_icon"></i></a>
+      
+  </div>
+  </div>
+    
+    `;
   }
 
   function handleAboutMe() {
@@ -70,51 +107,28 @@ const portfolio = (function() {
     });
   }
 
-  // function handleSkills() {
-  //   $('#skills').click(function() {
-  //     $('#about_id').html(generateSkillsHtml());
-  //     console.log('aboutme button works');
-  //   });
-  // }
+  function handleSkills() {
+    $('#skills').click(function() {
+      $('#main_container').html(generateSkillsHtml());
+      console.log('skills button works');
+    });
+  }
 
-  // function handleContact() {
-  //   $('#contact_info').click(function() {
-  //     $('#about_id').html(generateContactHtml());
-  //     console.log('aboutme button works');
-  //   });
-  // }
-
-  // <div class="container grid-4 center">
-  //       <div id= 'about_me'>
-  //         <i class="fas fa-glasses fa-3x"></i>
-  //         <h3>About Me</h3>
-  //         <p>Hello!</p>
-  //       </div>
-  //       <div id= 'projects'>
-  //         <i class="fas fa-code fa-3x"></i>
-  //         <h3>Projects</h3>
-  //         <p>Take a look at what I've worked on</p>
-  //       </div>
-  //       <div id= 'skills'>
-  //           <i class="fas fa-tasks fa-3x"></i>
-  //           <h3>Skills</h3>
-  //           <p>What I know</p>
-  //         </div>
-  //       <div id= 'contact_info'>
-  //         <i class="fas fa-id-card fa-3x"></i>
-  //         <h3>Contact Info</h3>
-  //         <p>Lets get in contact</p>
-  //       </div>
+  function handleContact() {
+    $('#contact_info').click(function() {
+      $('#main_container').html(generateContactHtml());
+      console.log('contact button works');
+    });
+  }
 
   function bindEventListeners() {
-    handleAboutMe,
-    handleProjects;
-    // handleSkills,
-    // handleContact
+    handleAboutMe();
+    handleProjects();
+    handleSkills();
+    handleContact();
   }
 
   return {
-    handleAboutMe,
-    handleProjects,
+    bindEventListeners
   };
 })();

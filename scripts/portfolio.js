@@ -96,6 +96,7 @@ const portfolio = (function() {
   function handleAboutMe() {
     $('#about_me').click(function() {
       $('#main_container').html(generateAboutMeHtml());
+      $('html, body').animate({scrollTop:$(document).height()}, 'fast');
       console.log('aboutme button works');
     });
   }
@@ -103,6 +104,7 @@ const portfolio = (function() {
   function handleProjects() {
     $('#projects').click(function() {
       $('#main_container').html(generateProjectHtml());
+      $('html, body').animate({scrollTop:$(document).height()}, 'fast');
       console.log('projects button works');
     });
   }
@@ -110,6 +112,7 @@ const portfolio = (function() {
   function handleSkills() {
     $('#skills').click(function() {
       $('#main_container').html(generateSkillsHtml());
+      $('html, body').animate({scrollTop:$(document).height()}, 'fast');
       console.log('skills button works');
     });
   }
@@ -117,6 +120,7 @@ const portfolio = (function() {
   function handleContact() {
     $('#contact_info').click(function() {
       $('#main_container').html(generateContactHtml());
+      $('html, body').animate({scrollTop:$(document).height()}, 'fast');
       console.log('contact button works');
     });
   }

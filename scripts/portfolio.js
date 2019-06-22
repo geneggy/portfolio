@@ -75,21 +75,20 @@ const portfolio = (function() {
 
   function generateContactHtml() {
     return `
-    <div class="grid-2 center">
+    
     
     <div class="center">
     <i class="fa fa-id-card fa-10x"></i>
-    </div>
-    <div class = contact_links>
     <h2>Eugene Gian</h2>
+
       <a href="mailto:eugene.gian@outlook.com" target="_top"><i class="fa fa-envelope fa-2x small_icon"></i></a>
 
       <a href="https://github.com/geneggy"><i class="fab fa-github fa-2x small_icon"></i></a>
 
       <a href="https://www.linkedin.com/in/eugene-gian-792b5715a/"><i class="fab fa-linkedin fa-2x small_icon"></i></a>
-      
-  </div>
-  </div>
+
+    </div>
+
     
     `;
   }

@@ -9,7 +9,6 @@ footer {
   bottom: 0;
   height: auto;
   width: 100%;
-  padding: 5px;
 }
 
 body {
@@ -52,8 +51,8 @@ body {
   z-index: 1;
   left: 50%;
   margin-top: 100px;
-  margin-left: -150px;
-  width: 300px;
+  margin-left: -200px;
+  width: 400px;
   height: 350px;
   text-align: center;
   transition: all 500ms;
@@ -112,17 +111,6 @@ body {
 .bg-dark {
   background: #333;
   color: #f4f4f4;
-}
-
-/* footer {
-  position: absolute;
-  bottom:0;
-  padding: 10px;
-  width: 100%;
-} */
-
-footer p {
-  margin: 0;
 }
 
 .top-nav p {
@@ -192,9 +180,9 @@ ul {
     grid-gap: 0;
   }
 
-  .information div {
+  /* .information div {
     padding: 20px 0;
-  }
+  } */
 
   .description {
     font-size: 0;

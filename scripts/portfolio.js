@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const portfolio = (function() {
   function generateAboutMeHtml() {
     return `

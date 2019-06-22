@@ -133,16 +133,20 @@ const portfolio = (function() {
     $('footer').css('height', footerHeight);
   }
   
+  function displayOnLoad() {
+    $('#main_container').html(generateAboutMeHtml());
+  }
 
   function bindEventListeners() {
     handleAboutMe();
     handleProjects();
     handleSkills();
     handleContact();
+    displayOnLoad();
   }
 
   return {
     bindEventListeners,
-    footerAlign
+    footerAlign,
   };
 })();

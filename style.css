@@ -75,6 +75,13 @@ body {
   padding: 30px 16px;
 }
 
+.container2 {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 30px 16px;
+}
+
 .fa-dice-d20 {
   font-size: 200px;
 }

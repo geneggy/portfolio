@@ -3,5 +3,6 @@
 
 $(document).ready(function() {
   portfolio.bindEventListeners();
+  portfolio.footerAlign();
 });
 

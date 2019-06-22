@@ -1,3 +1,17 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+footer {
+  display:none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  padding: 5px;
+}
+
 body {
   background: rgba(0, 0, 0, .9);
   margin: 0;
@@ -100,11 +114,12 @@ body {
   color: #f4f4f4;
 }
 
-footer {
+/* footer {
+  position: absolute;
   bottom:0;
   padding: 10px;
   width: 100%;
-}
+} */
 
 footer p {
   margin: 0;

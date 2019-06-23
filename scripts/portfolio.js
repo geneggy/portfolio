@@ -6,8 +6,8 @@ const portfolio = (function() {
     
     <div class="center">
     <i class="fa fa-laptop-code fa-10x"></i>
-  </div>
-  <div>
+    </div>
+    <div>
     <h2>About Me</h2>
     <p>
       I am currently attending the Engineering Immersion bootcamp at Thinkful. I
@@ -125,6 +125,79 @@ const portfolio = (function() {
     });
   }
 
+
+  function generateBookmarkApp() {
+    return `
+    <div class="grid-2" id = "bookmarkexpand_id">
+    <div class="center">
+    <img src="bookmarkapp.png" alt="bookmark_app" class = 'app_picture'>
+    </div>
+    <div>
+    <h2>Bookmark App</h2>
+    <p>
+    Simple web app for storing and maintaining various websites and details on an API.
+      <br />
+      <h3> Technologies Used: </h3>
+      <ul>
+      <li>JavaScript</li>
+      <li>jQuery</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      </ul>
+      <br />
+      <a href="https://thinkful-ei-emu.github.io/eugene-bookmark-app/" target="_blank"><i class="fab fa-safari"></i>Visit Live Page</a>
+      <a href="https://github.com/thinkful-ei-emu/eugene-bookmark-app" target="_blank"><i class="fab fa-github fa-2x small_icon"></i>Github</a>
+    </p>
+  </div>
+  </div>
+    `;
+  }
+
+  function generateQuizApp() {
+    return `
+    <div class="grid-2" id = "quizexpand_id">
+    
+    <div class="center">
+    <img src="quizapp.png" alt="quiz_app" class = 'app_picture'>
+    </div>
+    <div>
+    <h2>Quiz App</h2>
+    <p>
+    Paired programming project for utilizing Open Trivia DB API to generate 5 random trivia questions and keep track of score for the user. 
+      <br />
+      <h3>Tech</h3>
+      <ul>
+      <li>JavaScript</li>
+      <li>jQuery</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      </ul>
+      <br />
+      <br />
+      <a href="https://github.com/thinkful-ei-emu/adrienne-eugene-quiz-app-2" target="_blank"><i class="fab fa-safari fa-2x"></i>Visit Live Page</a>
+      <a href="https://github.com/thinkful-ei-emu/adrienne-eugene-quiz-app-2" target="_blank"><i class="fab fa-github fa-2x small_icon"></i>Github</a>
+    </p>
+  </div>
+  </div>
+    `;
+  }
+
+  function handleBookmarkApp() {
+    $('#main_container').on('click', '#bookmark', function (){
+      $('#main_container').html(generateBookmarkApp());
+      console.log('bookmark button works');
+    });
+  }
+
+  function handleQuizApp() {
+    $('#main_container').on('click', '#quiz', function (){
+      $('#main_container').html(generateQuizApp());
+      console.log('Quiz button works');
+    });
+  }
+
+  
+
   function footerAlign() {
     $('footer').css('display', 'block');
     $('footer').css('height', 'auto');
@@ -142,6 +215,8 @@ const portfolio = (function() {
     handleProjects();
     handleSkills();
     handleContact();
+    handleBookmarkApp();
+    handleQuizApp(); 
     displayOnLoad();
   }
 

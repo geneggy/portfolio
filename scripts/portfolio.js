@@ -174,7 +174,7 @@ const portfolio = (function() {
       </ul>
       <br />
       <br />
-      <a href="https://github.com/thinkful-ei-emu/adrienne-eugene-quiz-app-2" target="_blank"><i class="fab fa-safari fa-2x"></i>Visit Live Page</a>
+      <a href=" https://thinkful-ei-emu.github.io/adrienne-eugene-quiz-app-2" target="_blank"><i class="fab fa-safari fa-2x"></i>Visit Live Page</a>
       <a href="https://github.com/thinkful-ei-emu/adrienne-eugene-quiz-app-2" target="_blank"><i class="fab fa-github fa-2x small_icon"></i>Github</a>
     </p>
   </div>

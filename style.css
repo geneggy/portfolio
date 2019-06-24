@@ -110,6 +110,11 @@ body {
   margin: auto;
 }
 
+.left {
+  text-align: left;
+  line-height: 30px;
+}
+
 .bg-light {
   background: #f4f4f4;
   color: #333;
@@ -136,6 +141,14 @@ body {
 .app_picture {
   max-width: 100%;
   height: auto;
+}
+
+.hover:hover {
+  background:#353b48;
+}
+
+.hover2:hover {
+  background:#ecf0f1; 
 }
 
 a{

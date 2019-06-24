@@ -31,26 +31,27 @@ const portfolio = (function() {
 
   function generateProjectHtml() {
     return `
-    <div class="center">
+  <div class="center">
     <h2>Projects</h2>
-</div>
-<div class = "container grid-3 center">
+    </div>
+  <div class = "container grid-3 center">
 
-  <div id= 'bookmark'>
+  <div id= 'bookmark' class = 'hover2'>
     <i class="fas fa-bookmark fa-3x"></i>
     <h3>Bookmark App</h3>
-    <p>Simple web app for storing and maintaining various websites and details on an API. </p>
-  </div>
-  <div id= 'quiz'>
-    <i class="fas fa-pen-square fa-3x"></i>
-    <h3>Quiz App</h3>
-    <p>Utilize Open Trivia DB to generate 5 random trivia questions for the user to answer</p>
+    <p class = 'left'>Simple web app for storing and maintaining various websites and details on an API. </p>
   </div>
 
-  <div id= 'placeholder'>
+  <div id= 'quiz' class = 'hover2'>
+    <i class="fas fa-pen-square fa-3x"></i>
+    <h3>Quiz App</h3>
+    <p class = 'left'>Utilize Open Trivia DB to generate 5 random trivia questions for the user to answer</p>
+  </div>
+
+  <div id= 'placeholder' class = 'hover2'>
     <i class="fas fa-wrench fa-3x"></i>
     <h3>Placeholder</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, neque.</p>
+    <p class = 'left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, neque.</p>
   </div>
 </div>
   `;
@@ -68,8 +69,7 @@ const portfolio = (function() {
       <li>CSS</li>
       <li>Placeholder</li>
     </ul>
-  </div>
-
+    </div>
     `;
   }
 

@@ -80,7 +80,8 @@ const portfolio = (function() {
     <div class="center">
     <i class="fa fa-id-card fa-10x"></i>
     <h2>Eugene Gian</h2>
-
+      <p>I'm currently residing in Los Angeles, California. 
+      </br>Feel free to reach out to me on any of these accounts!</p>
       <a href="mailto:eugene.gian@outlook.com" target="_top"><i class="fa fa-envelope fa-2x small_icon"></i></a>
 
       <a href="https://github.com/geneggy"><i class="fab fa-github fa-2x small_icon"></i></a>

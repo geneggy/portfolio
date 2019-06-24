@@ -130,7 +130,7 @@ const portfolio = (function() {
     return `
     <div class="grid-2" id = "bookmarkexpand_id">
     <div class="center">
-    <img src="bookmarkapp.png" alt="bookmark_app" class = 'app_picture'>
+    <img src="bookmarkapp.PNG" alt="bookmark_app" class = 'app_picture'>
     </div>
     <div>
     <h2>Bookmark App</h2>
@@ -158,7 +158,7 @@ const portfolio = (function() {
     <div class="grid-2" id = "quizexpand_id">
     
     <div class="center">
-    <img src="quizapp.png" alt="quiz_app" class = 'app_picture'>
+    <img src="quizapp.PNG" alt="quiz_app" class = 'app_picture'>
     </div>
     <div>
     <h2>Quiz App</h2>
@@ -196,7 +196,7 @@ const portfolio = (function() {
     });
   }
 
-  
+
 
   function footerAlign() {
     $('footer').css('display', 'block');

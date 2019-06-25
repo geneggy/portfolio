@@ -19,7 +19,7 @@ const portfolio = (function() {
       work while under a strict time crunch. Tax season can be quite the overload.
       <br />
       <br />
-      When I’m not coding, I like to spend my free time reviewing revious
+      When I’m not coding, I like to spend my free time reviewing previous
       projects, computer gaming, reading, and engaging in various physical
       activities such as hiking, running, rock climbing, and weight lifting. I
       love to keep an active lifestyle.

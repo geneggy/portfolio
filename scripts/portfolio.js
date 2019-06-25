@@ -5,7 +5,7 @@ const portfolio = (function() {
     <div class="grid-2" id = "about_id">
     
     <div class="center">
-    <i class="fa fa-laptop-code fa-10x"></i>
+    <i class="fa fa-laptop-code media-icon"></i>
     </div>
     <div>
     <h2>About Me</h2>
@@ -60,7 +60,7 @@ const portfolio = (function() {
   function generateSkillsHtml() {
     return `
     <div class="center">
-    <i class="fas fa-sitemap fa-10x"></i>
+    <i class="fas fa-sitemap media-icon"></i>
     <h2>Skills</h2>
     <ul>
       <li>JavaScript</li>
@@ -78,7 +78,7 @@ const portfolio = (function() {
     
     
     <div class="center">
-    <i class="fa fa-id-card fa-10x"></i>
+    <i class="fa fa-id-card media-icon"></i>
     <h2>Eugene Gian</h2>
       <p>I'm currently residing in Los Angeles, California. 
       </br>Feel free to reach out to me on any of these accounts!</p>

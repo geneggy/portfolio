@@ -33,27 +33,48 @@ const portfolio = (function () {
     return `
   <div class="center">
     <h2>Projects</h2>
+  </div>
+  <div class = "grid-2 center">
+    <div id= 'bookmark' class = 'hover2'>
+      <i class="fas fa-bookmark fa-3x"></i>
+      <h3>Bookmark App</h3>
+      <p class = 'left'>Simple web app for storing and maintaining various websites and details on an API. </p>
     </div>
-  <div class = "container grid-3 center">
 
-  <div id= 'bookmark' class = 'hover2'>
-    <i class="fas fa-bookmark fa-3x"></i>
-    <h3>Bookmark App</h3>
-    <p class = 'left'>Simple web app for storing and maintaining various websites and details on an API. </p>
+    <div id= 'quiz' class = 'hover2'>
+      <i class="fas fa-pen-square fa-3x"></i>
+      <h3>Quiz App</h3>
+      <p class = 'left'>Utilize Open Trivia DB to generate 5 random trivia questions for the user to answer</p>
+    </div>
   </div>
 
-  <div id= 'quiz' class = 'hover2'>
-    <i class="fas fa-pen-square fa-3x"></i>
-    <h3>Quiz App</h3>
-    <p class = 'left'>Utilize Open Trivia DB to generate 5 random trivia questions for the user to answer</p>
-  </div>
-
-  <div id= 'placeholder' class = 'hover2'>
-    <i class="fas fa-wrench fa-3x"></i>
-    <h3>Placeholder</h3>
-    <p class = 'left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, neque.</p>
-  </div>
+  <div class="center">
+  <h2>Websites</h2>
 </div>
+
+  <div class = "grid-3 center">
+    
+    <div id= 'munite' class = 'hover2 card'>
+    <a href="https://geneggy.github.io/munite-pro/">
+      <img src="../munite.png" class="websiteimg" >
+      <p class = 'left'>Live demo business website for a meat imports company</p>
+      </a>
+    </div>
+
+    <div id= 'usa' class = 'hover2 card'>
+    <a href="https://geneggy.github.io/web_project_3/">
+    <img src="../usa.png" class="websiteimg" >
+      <p class = 'left'>Travel blog website aobut a bike journey from Portland, ME to Portland, OR with an image gallery.</p>
+      </a>
+    </div>
+
+    <div id= 'ypracticum' class = 'hover2 card'>
+    <a href="https://geneggy.github.io/web_project_1/">
+    <img src="../ypracticum.png" class="websiteimg" >
+      <p class = 'left'>In website that compiles links and resources on how to learn</p>
+    </div>
+    </a>
+  </div>
   `;
   }
 
@@ -65,9 +86,10 @@ const portfolio = (function () {
     <ul>
       <li>JavaScript</li>
       <li>JQuery</li>
+      <li>React</li>
       <li>HTML</li>
       <li>CSS</li>
-      <li>Placeholder</li>
+      
     </ul>
     </div>
     `;

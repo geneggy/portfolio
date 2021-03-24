@@ -78,26 +78,41 @@ body {
 }
 
 .about {
+  height: 
   display: flex;
   justify-content: center;
-  height: 50vh;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.card {
+
+  border-radius: 25px;
+  border: 2px solid #333;
+  padding: 20px;
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1000px;
   margin: auto;
   padding: 30px 16px;
 }
 
+.websiteimg {
+  width: 100%;
+}
+
 .container2 {
-  max-width: 50%;
+  max-width: 100%;
   margin: auto;
   overflow: hidden;
   padding: 20px;
 }
 
 .fa-dice-d20 {
-  font-size: 200px;
+  font-size: 15vh;
 }
 
 .grid-4 {
@@ -185,21 +200,6 @@ ul {
 /* Small Screens */
 
 @media (max-width: 560px) {
-  .showcase::after {
-    height: 35vh;
-  }
-
-  .content {
-    top: 5%;
-    margin-top: 8px;
-    margin-left: -150px;
-    width: 300px;
-  }
-
-  .fa-dice-d20 {
-    font-size: 120px;
-  }
-
   .media-icon {
     font-size: 110px;
   }
@@ -230,10 +230,6 @@ ul {
 }
 
 @media (max-width: 350px) {
-  .fa-dice-d20 {
-    font-size: 100px;
-  }
-
   .media-icon {
     font-size: 90px;
   }

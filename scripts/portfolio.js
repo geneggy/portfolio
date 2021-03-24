@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-const portfolio = (function() {
+const portfolio = (function () {
   function generateAboutMeHtml() {
     return `
     <div class="grid-2" id = "about_id">
@@ -10,7 +10,7 @@ const portfolio = (function() {
     <div>
     <h2>About Me</h2>
     <p>
-      I am currently attending the Engineering Immersion bootcamp at Thinkful. I
+      I am currently teaching myself how to code. I
       love coding because it’s invigorating to see your project come to life while
       overcoming and discovering each step to get to that point.
       <br />
@@ -95,37 +95,36 @@ const portfolio = (function() {
   }
 
   function handleAboutMe() {
-    $('#about_me').click(function() {
-      $('#main_container').html(generateAboutMeHtml());
-      $('html, body').animate({scrollTop:$(document).height()}, 'fast');
-      console.log('aboutme button works');
+    $("#about_me").click(function () {
+      $("#main_container").html(generateAboutMeHtml());
+      // $("html, body").animate({ scrollTop: $(document).height() }, "fast");
+      console.log("aboutme button works");
     });
   }
 
   function handleProjects() {
-    $('#projects').click(function() {
-      $('#main_container').html(generateProjectHtml());
-      $('html, body').animate({scrollTop:$(document).height()}, 'fast');
-      console.log('projects button works');
+    $("#projects").click(function () {
+      $("#main_container").html(generateProjectHtml());
+      // $("html, body").animate({ scrollTop: $(document).height() }, "fast");
+      console.log("projects button works");
     });
   }
 
   function handleSkills() {
-    $('#skills').click(function() {
-      $('#main_container').html(generateSkillsHtml());
-      $('html, body').animate({scrollTop:$(document).height()}, 'fast');
-      console.log('skills button works');
+    $("#skills").click(function () {
+      $("#main_container").html(generateSkillsHtml());
+      // $("html, body").animate({ scrollTop: $(document).height() }, "fast");
+      console.log("skills button works");
     });
   }
 
   function handleContact() {
-    $('#contact_info').click(function() {
-      $('#main_container').html(generateContactHtml());
-      $('html, body').animate({scrollTop:$(document).height()}, 'fast');
-      console.log('contact button works');
+    $("#contact_info").click(function () {
+      $("#main_container").html(generateContactHtml());
+      // $("html, body").animate({ scrollTop: $(document).height() }, "fast");
+      console.log("contact button works");
     });
   }
-
 
   function generateBookmarkApp() {
     return `
@@ -184,31 +183,29 @@ const portfolio = (function() {
   }
 
   function handleBookmarkApp() {
-    $('#main_container').on('click', '#bookmark', function (){
-      $('#main_container').html(generateBookmarkApp());
-      console.log('bookmark button works');
+    $("#main_container").on("click", "#bookmark", function () {
+      $("#main_container").html(generateBookmarkApp());
+      console.log("bookmark button works");
     });
   }
 
   function handleQuizApp() {
-    $('#main_container').on('click', '#quiz', function (){
-      $('#main_container').html(generateQuizApp());
-      console.log('Quiz button works');
+    $("#main_container").on("click", "#quiz", function () {
+      $("#main_container").html(generateQuizApp());
+      console.log("Quiz button works");
     });
   }
 
-
-
   function footerAlign() {
-    $('footer').css('display', 'block');
-    $('footer').css('height', 'auto');
-    var footerHeight = $('footer').outerHeight();
-    $('body').css('padding-bottom', footerHeight);
-    $('footer').css('height', footerHeight);
+    $("footer").css("display", "block");
+    $("footer").css("height", "auto");
+    var footerHeight = $("footer").outerHeight();
+    $("body").css("padding-bottom", footerHeight);
+    $("footer").css("height", footerHeight);
   }
-  
+
   function displayOnLoad() {
-    $('#main_container').html(generateAboutMeHtml());
+    $("#main_container").html(generateAboutMeHtml());
   }
 
   function bindEventListeners() {
@@ -217,7 +214,7 @@ const portfolio = (function() {
     handleSkills();
     handleContact();
     handleBookmarkApp();
-    handleQuizApp(); 
+    handleQuizApp();
     displayOnLoad();
   }
 

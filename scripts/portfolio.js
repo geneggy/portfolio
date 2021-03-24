@@ -55,21 +55,21 @@ const portfolio = (function () {
   <div class = "grid-3 center">
     
     <div id= 'munite' class = 'hover2 card'>
-    <a href="https://geneggy.github.io/munite-pro/">
+    <a href="https://geneggy.github.io/munite-pro/" target="_blank">
       <img src="../munite.png" class="websiteimg" >
       <p class = 'left'>Live demo business website for a meat imports company</p>
       </a>
     </div>
 
     <div id= 'usa' class = 'hover2 card'>
-    <a href="https://geneggy.github.io/web_project_3/">
+    <a href="https://geneggy.github.io/web_project_3/" target="_blank">
     <img src="../usa.png" class="websiteimg" >
       <p class = 'left'>Travel blog website aobut a bike journey from Portland, ME to Portland, OR with an image gallery.</p>
       </a>
     </div>
 
     <div id= 'ypracticum' class = 'hover2 card'>
-    <a href="https://geneggy.github.io/web_project_1/">
+    <a href="https://geneggy.github.io/web_project_1/" target="_blank">
     <img src="../ypracticum.png" class="websiteimg" >
       <p class = 'left'>In website that compiles links and resources on how to learn</p>
     </div>

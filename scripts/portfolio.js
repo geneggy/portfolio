@@ -32,6 +32,7 @@ const portfolio = (function () {
   function generateProjectHtml() {
     return `
   <div class="center">
+  
     <h2>Projects</h2>
   </div>
   <div class = "grid-2 center">

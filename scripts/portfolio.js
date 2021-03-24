@@ -10,13 +10,10 @@ const portfolio = (function () {
     <div>
     <h2>About Me</h2>
     <p>
-      I am currently teaching myself how to code. I
-      love coding because it’s invigorating to see your project come to life while
+      I'm a creative and detail oriented full-stack developer with a strong passion in front-end web design. I love coding because it’s invigorating to see your project come to life while
       overcoming and discovering each step to get to that point.
       <br />
-      <br />I have a background in internal auditing for collections. I’m
-      deliberate and resourceful with a strong track record in providing excellent
-      work while under a strict time crunch. Tax season can be quite the overload.
+      <br />I am in the middle of a career change and would like to tackle any web project that meets my path. I treat every project with care, precision, and responsiveness. I have a background in internal auditing for collections agencies. I’m deliberate and resourceful with a strong track record in providing excellent work while under a strict time crunch. Tax season can be quite the overload.
       <br />
       <br />
       When I’m not coding, I like to spend my free time reviewing previous
@@ -32,7 +29,7 @@ const portfolio = (function () {
   function generateProjectHtml() {
     return `
   <div class="center">
-  
+
     <h2>Projects</h2>
   </div>
   <div class = "grid-2 center">
@@ -90,7 +87,7 @@ const portfolio = (function () {
       <li>React</li>
       <li>HTML</li>
       <li>CSS</li>
-      
+      <li>WordPress</li>
     </ul>
     </div>
     `;

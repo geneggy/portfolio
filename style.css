@@ -159,7 +159,10 @@ a:link {
 }
 
 .left {
-  text-align: left;
+  line-height: 20px;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-align: center;
   line-height: 20px;
 }
 

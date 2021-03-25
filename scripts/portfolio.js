@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 const portfolio = (function () {
   function generateAboutMeHtml() {
     return `
@@ -32,7 +31,7 @@ const portfolio = (function () {
 
     <h2>Projects</h2>
   </div>
-  <div class = "grid-2 center">
+  <div class = "grid-3 center">
     <div id= 'bookmark' class = 'hover2'>
       <i class="fas fa-bookmark fa-3x"></i>
       <h3>Bookmark App</h3>
@@ -44,6 +43,12 @@ const portfolio = (function () {
       <h3>Quiz App</h3>
       <p class = 'left'>Utilize Open Trivia DB to generate 5 random trivia questions for the user to answer</p>
     </div>
+
+    <div id= 'aroundus' class = 'hover2'>
+    <i class="fas fa-images fa-3x"></i>
+    <h3>Around US</h3>
+    <p class = 'left'>Around the US is a project used to demonstrate knoowledge of HTML/CSS, javascript, and API mastery through a photo gallery profile. An API is utilized to allow the user to view other user photos, upload or delete personal photos, and edit profile information.</p>
+  </div>
   </div>
 
   <div class="center">
@@ -117,33 +122,52 @@ const portfolio = (function () {
   function handleAboutMe() {
     $("#about_me").click(function () {
       $("#main_container").html(generateAboutMeHtml());
-      // $("html, body").animate({ scrollTop: $(document).height() }, "fast");
-      console.log("aboutme button works");
     });
   }
 
   function handleProjects() {
     $("#projects").click(function () {
       $("#main_container").html(generateProjectHtml());
-      // $("html, body").animate({ scrollTop: $(document).height() }, "fast");
-      console.log("projects button works");
     });
   }
 
   function handleSkills() {
     $("#skills").click(function () {
       $("#main_container").html(generateSkillsHtml());
-      // $("html, body").animate({ scrollTop: $(document).height() }, "fast");
-      console.log("skills button works");
     });
   }
 
   function handleContact() {
     $("#contact_info").click(function () {
       $("#main_container").html(generateContactHtml());
-      // $("html, body").animate({ scrollTop: $(document).height() }, "fast");
-      console.log("contact button works");
     });
+  }
+
+  function generateAroundusApp() {
+    return `
+    <div class="grid-2" id = "bookmarkexpand_id">
+    <div class="center">
+    <img src="aroundus.PNG" alt="bookmark_app" class = 'app_picture'>
+    </div>
+    <div>
+    <h2>Around the US</h2>
+    <p>
+    Around the US is a project used to demonstrate knoowledge of HTML/CSS, javascript, and API mastery through a photo gallery profile. An API is utilized to allow the user to view other user photos, upload or delete personal photos, and edit profile information.
+      <br />
+      <h3> Technologies Used: </h3>
+      <ul>
+      <li>JavaScript</li>
+      <li>Node</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      </ul>
+      <br />
+      <a href="https://geneggy.github.io/web_project_4/dist/index.html" target="_blank"><i class="fab fa-safari fa-2x small_icon"></i>Visit Live Page</a>
+      <a href="https://github.com/geneggy/web_project_4" target="_blank"><i class="fab fa-github fa-2x small_icon"></i>Github</a>
+    </p>
+  </div>
+  </div>
+    `;
   }
 
   function generateBookmarkApp() {
@@ -205,14 +229,18 @@ const portfolio = (function () {
   function handleBookmarkApp() {
     $("#main_container").on("click", "#bookmark", function () {
       $("#main_container").html(generateBookmarkApp());
-      console.log("bookmark button works");
     });
   }
 
   function handleQuizApp() {
     $("#main_container").on("click", "#quiz", function () {
       $("#main_container").html(generateQuizApp());
-      console.log("Quiz button works");
+    });
+  }
+
+  function handleAroundusApp() {
+    $("#main_container").on("click", "#aroundus", function () {
+      $("#main_container").html(generateAroundusApp());
     });
   }
 
@@ -232,6 +260,7 @@ const portfolio = (function () {
     handleAboutMe();
     handleProjects();
     handleSkills();
+    handleAroundusApp();
     handleContact();
     handleBookmarkApp();
     handleQuizApp();
